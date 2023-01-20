@@ -1,0 +1,35 @@
+<div class="wrapper">
+
+  <h1 id="Nombre">Marcos Jaasiel Hernandez Jimenez</h1>
+
+  <div class="gallery">
+    <div class="item" *ngFor="let item of data">
+      <h1> {{ item.name }} </h1>
+      <p> {{ item.description }} </p>
+      <div class="imgs">
+        <img [src]="img" alt="" *ngFor="let img of item.flickr_images">
+      </div>
+    </div>
+  </div>
+
+  <div class="capsules">
+    <div class="item" *ngFor="let item of capsules">
+      <h1> {{ item.serial }} </h1>
+      <p> {{ item.status }} </p>
+      <p> {{ item.id }} </p>
+      <p> {{ item.type }} </p>
+      <p> {{ item.reuse_count }} </p>
+    </div>
+  </div>
+
+  <div class="company">
+    <div class="item" *ngFor="let item of company">
+      <h1> {{ item.name }} </h1>
+      <p> {{ item.founder }} </p>
+      <p> {{item.founded }} </p>
+      <p> {{item.employes }} </p>
+      <p> {{ item.ceo }} </p>
+    </div>
+  </div>
+
+</div>
